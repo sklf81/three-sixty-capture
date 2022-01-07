@@ -1,0 +1,78 @@
+:root{
+	--about-button-left: 100px;
+	--about-button-width: 300px;
+	--documentation-button-width : calc(var(--about-button-width) * 1.08);
+	--documentation-button-left: calc(var(--about-button-width) * 0.05 + var(--about-button-width) + var(--about-button-left));
+}
+
+body{
+	margin: 0px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+img[src="title.png"]{
+	width: 1000px;
+}
+
+img[src="about_button.png"]{
+	position: absolute;
+	top: 400px;
+	left: var(--about-button-left);
+	width: var(--about-button-width);
+}
+
+img[src="documentation_button.png"]{
+	position: absolute;
+	top: 400px;
+	left: var(--documentation-button-left);
+	width: var(--documentation-button-width);
+}
+
+img[src="graphic.png"]{
+	position: absolute;
+	top: calc(-1080px * 0.125);
+	left: calc(-1920px * 0.125);
+	width: calc(1920px * 1.25);
+	z-index: -1;
+}
+
+img[src="graphic_background.png"]{
+	position: absolute;
+	width: calc(1920px * 3);
+	z-index: -2;
+	opacity: 0.5;
+}
+
+.header{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	transform: translateZ(0.25px);
+	transform: scale(0.85);
+}
+
+.site_content{
+	width: 100vw;
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden; 
+	perspective: 1px;
+	transform-style: preserve-3d;
+	z-index: 0;
+}
+.graphic_foreground{
+	position: absolute;
+	transform: translateZ(-0.25px);
+	z-index: -1;
+}
+
+.graphic_background{
+	position: absolute;
+	top: -1000px;
+	left: -2000px;
+	transform: translateZ(-1px);
+	z-index: -2;
+}

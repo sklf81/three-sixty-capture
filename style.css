@@ -76,3 +76,60 @@ img[src="graphic_background.png"]{
 	transform: translateZ(-1px);
 	z-index: -2;
 }
+
+#information{
+	position: absolute;
+	top: 50px;
+}
+
+#general{
+	position: absolute;
+	left: 200px;
+}
+
+#technical{
+	position: absolute;
+	top: -20px;
+	left: 600px;
+}
+
+img[src="blue_square.png"]{
+	position: relative;
+	top: -750px;
+	left: -25px;
+	height: 500px;
+	width: 400px;
+	z-index: -1;
+}
+
+img[src="magenta_square.png"]{
+	position: relative;
+	top: -750px;
+	left: -50px;
+	height: 400px;
+	width: 400px;
+	z-index: -1;
+}
+
+h1{
+	position: relative;
+	font-size: 45pt;
+	width: 400px;
+	font-family: Bahnschrift;
+	color: white;
+}
+
+p{
+	position: relative;
+	font-size: 14pt;
+	font-family: Calibri;
+	color: white;
+	width: 300px;
+	height: 500px;
+	text-align: justify;
+}
+
+.content{
+	position: absolute;
+	top: 1000px;
+}

@@ -2,29 +2,29 @@
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css"/>
-        <link rel="icon" href="360-Capture.png"/>
+        <link rel="icon" href="assets/360-Capture.png"/>
         <title> 360 Capture </title>
     </head>
 
     <body>
         <div class="site_content">
 			<div id="header" class="header">
-				<div id="title">
-					<img src="title.png">
+				<div id="title_wrapper">
+					<img id="title" src="assets/title.png">
 				</div>
 				<div class="navbar">
 					<ul>
-						<li><a href="#content" class="navbar_element"><img src="about_button.png"></a></li>
-						<li><a href="/documentation" class="navbar_element"><img src="documentation_button.png"></a></li>
+						<li><a href="#content" class="navbar_element"><img id="about_button" class="about_button" src="assets/about_button.png"><img id="about_button_inverted" class="about_button" src="assets/about_button_inverted.png"></a></li>
+						<li><a href="documentation/webview.php" class="navbar_element"><img id="doc_button" class="doc_button" src="assets/documentation_button.png"><img id="doc_button_inverted" class="doc_button" src="assets/documentation_button_inverted.png"></a></li>
 					</ul>
 				</div>
 			</div>
 
-			<div id="graphic_foreground" class="graphic_foreground">
-				<img src="graphic.png">
+			<div id="graphic_foreground_wrapper" class="graphic_foreground_wrapper">
+				<img id="graphic" src="assets/graphic.png">
 			</div>
-			<div id="graphic_background" class="graphic_background">
-				<img src="graphic_background.png">
+			<div id="graphic_background_wrapper" class="graphic_background_wrapper">
+				<img id="graphic_background" src="assets/graphic_background.png">
 			</div>
 
 			<div id="content" class="content">
@@ -46,7 +46,14 @@
 							Bildungs-, Demonstrations- und 
 							Entwicklungszwecke verwendet werden.
 						</p>
-						<img src="blue_square.png">
+						<h1> Diplomarbeit <br>
+							der HTL-Bulme <br>
+							Graz-Gösting </h1>
+						<p>
+							von Philip Keusch und Markus Kotar <br>
+							unter der Betreuung von  DI Roland Nauta
+						</p>
+						<img id="blue_square" src="assets/blue_square.png">
 					</div>
 					<div id="technical">
 						<h1> Technology <br>in use</h1>
@@ -54,12 +61,22 @@
 							Funktionsprinzip ähnelt dem 
 							Global Positioning System (GPS).
 							<br>
-							Distanzmesung erfolgt
+							Distanzmessung erfolgt
 							durch Infrarotlicht und 
 							die Punktberechnung mittels 
 							einer herkömmlichen PC-CPU.
+							<br>
+							Die Messung der Distanz erfolgt
+							durch einen 
 						</p>
-						<img src="magenta_square.png">
+						<br>
+						<br>
+						<h1> Kontakt </h1>
+						<p style="text-align: left;">
+							Philip Keusch: <a href="philip.keusch@bulme.at"> philip.keusch@bulme.at</a>
+							Markus Kotar: <a href="markus.kotar@bulme.at"> markus.kotar@bulme.at</a>
+						</p>
+						<img id="magenta_square" src="assets/magenta_square.png">
 					</div>
 					<div id="background">
 	

@@ -4,10 +4,10 @@
         <link rel="stylesheet" href="style.css"/>
         <link rel="icon" href="webview_icon.png"/>
         <title>webview: <?php
-            $default_dir = getcwd();
+            $default_dir = getcwd()."/files";
             //below is an example of a root directory from a webserver
             //if webview.php is located in your root directory, replace "/var/www/html" with getcwd()
-            $server_root_dir = "/var/www/html/three-sixty-capture/documentation/files";
+            $server_root_dir = "/var/www/html/three-sixty-capture/documentation/";
 
             $dir = getDirectory($default_dir);
             $dir_disp = str_replace($default_dir, "/home", $dir);

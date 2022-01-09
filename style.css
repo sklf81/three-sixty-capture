@@ -7,31 +7,51 @@
 
 body{
 	margin: 0px;
+	height:	810px;
+	overflow-x:hidden;
+	overflow-y:hidden;
 }
 
 ul{
 	list-style-type: none;
 }
 
-img[src="title.png"]{
+#title{
+	position: relative;
 	width: 1000px;
 }
 
-img[src="about_button.png"]{
+.about_button{
 	position: absolute;
 	top: 400px;
 	left: var(--about-button-left);
 	width: var(--about-button-width);
 }
 
-img[src="documentation_button.png"]{
+.doc_button{
 	position: absolute;
 	top: 400px;
 	left: var(--documentation-button-left);
 	width: var(--documentation-button-width);
 }
 
-img[src="graphic.png"]{
+#about_button_inverted{
+	opacity: 0;
+}
+
+#about_button_inverted:hover{
+	opacity: 1;
+}
+
+#doc_button_inverted{
+	opacity: 0;
+}
+
+.doc_button_inverted:hover{
+	opacity: 1;
+}
+
+#graphic{
 	position: absolute;
 	top: calc(-1080px * 0.125);
 	left: calc(-1920px * 0.125);
@@ -39,7 +59,7 @@ img[src="graphic.png"]{
 	z-index: -1;
 }
 
-img[src="graphic_background.png"]{
+#graphic_background{
 	position: absolute;
 	width: calc(1920px * 3);
 	z-index: -2;
@@ -63,13 +83,13 @@ img[src="graphic_background.png"]{
 	transform-style: preserve-3d;
 	z-index: 0;
 }
-.graphic_foreground{
+.graphic_foreground_wrapper{
 	position: absolute;
 	transform: translateZ(-0.25px);
 	z-index: -1;
 }
 
-.graphic_background{
+.graphic_background_wrapper{
 	position: absolute;
 	top: -1000px;
 	left: -2000px;
@@ -79,44 +99,48 @@ img[src="graphic_background.png"]{
 
 #information{
 	position: absolute;
-	top: 50px;
+	top: 100px;
 }
 
 #general{
 	position: absolute;
 	left: 200px;
+	height: 500px;
 }
 
 #technical{
 	position: absolute;
-	top: -20px;
+	top: -100px;
 	left: 600px;
+	height: 400px;
 }
 
-img[src="blue_square.png"]{
+#blue_square{
 	position: relative;
-	top: -750px;
+	top: -700px;
 	left: -25px;
-	height: 500px;
-	width: 400px;
+	height: 750px;
+	width: 500px;
 	z-index: -1;
 }
 
-img[src="magenta_square.png"]{
+#magenta_square{
 	position: relative;
-	top: -750px;
+	top: -500px;
 	left: -50px;
-	height: 400px;
-	width: 400px;
+	height: 550px;
+	width: 500px;
 	z-index: -1;
 }
 
 h1{
 	position: relative;
 	font-size: 45pt;
-	width: 400px;
+	width: 450px;
 	font-family: Bahnschrift;
 	color: white;
+	margin-top: 6px;
+	margin-bottom: 6px;
 }
 
 p{
@@ -124,12 +148,20 @@ p{
 	font-size: 14pt;
 	font-family: Calibri;
 	color: white;
-	width: 300px;
-	height: 500px;
+	width: 350px;
 	text-align: justify;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .content{
 	position: absolute;
 	top: 1000px;
+}
+
+a{
+	color: #0bb3d9;
+}
+a:hover{
+	color: white;
 }

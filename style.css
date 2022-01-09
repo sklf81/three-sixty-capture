@@ -47,7 +47,7 @@ ul{
 	opacity: 0;
 }
 
-.doc_button_inverted:hover{
+#doc_button_inverted:hover{
 	opacity: 1;
 }
 

@@ -157,6 +157,7 @@ p{
 .content{
 	position: absolute;
 	top: 1000px;
+	width: 100%;
 }
 
 a{
@@ -164,4 +165,29 @@ a{
 }
 a:hover{
 	color: white;
+}
+
+.footer{
+	display: inline;
+    position: absolute;
+	top: 900px;
+	left: calc(50% - 150px);
+    text-align: center;
+	width: 300px;
+}
+
+.footer h2{
+    color: rgba(0, 0, 0, 0.40);
+    font-family: Helvetica;
+    font-size: 12pt;
+}
+
+.footer a{
+    color: rgba(217, 7, 84, 0.6);
+    font-family: consolas;
+    font-size: 12pt;
+}
+
+.footer a:hover{
+    color: #0bb3d9;
 }

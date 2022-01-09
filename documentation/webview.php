@@ -133,6 +133,9 @@
             echoFiles($server_root_dir, $files);
         ?>
 
-
+    <div class="credits">
+            <h2>Copyright © 2022 | Philip Keusch</h2>
+            <a href="https://github.com/sklf81/webview"> github.com/sklf81/webview </a>
+    </div>
     </body>
 </html>

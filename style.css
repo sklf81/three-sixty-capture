@@ -171,9 +171,9 @@ a:hover{
 	display: inline;
     position: absolute;
 	top: 900px;
-	left: calc(50% - 150px);
+	left: calc(50% - 250px);
     text-align: center;
-	width: 300px;
+	width: 500px;
 }
 
 .footer h2{

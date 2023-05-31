@@ -1,12 +1,16 @@
 <html>
     <head>
-    <?php
+        <?php
+        //FOR PASSWORD PROTECTION
+        /*
 		include "/var/www/html/include/modules/pass.php";
 
         if(auth_checkPass("_360C") === false){
             header("Location: /authentification.php?request=_360C&request_location=three-sixty-capture/documentation");
         }
+        */
         ?>
+
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css"/>
         <link rel="icon" href="webview_icon.png"/>
